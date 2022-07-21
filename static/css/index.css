@@ -1,0 +1,8 @@
+.stone-word {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  color: #fff;
+  font-size: 12px;
+  text-shadow: 1px 1px 1px #000;
+}

@@ -92,9 +92,28 @@
                   style="display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: rgba(0, 0, 0, 0.8)"
                 >
                   <div style="z-index: 999">
-                    <div style="display: flex; justify-content: center; max-width: 350px">
-                      <img src="static/image/magic-circle.png" style="width: 100%" />
-                      <img src="static/image/spear_gold.png" style="width: 30%; position: absolute; top: 30%; left: 35%" ; />
+                    <div style="display: flex; justify-content: center; max-width: 350px; position: relative">
+                      <img src="static/image/img_Refine_circle2.png" style="width: 100%" />
+                      <img src="static/image/img_Refine_star.png" style="position: absolute; width: 58%; top: 11%" />
+                      <img src="static/image/img_Refine_title.png" style="position: absolute; width: 70%; top: 64%; right: 14.14%" />
+                      <img src="static/image/spear_gold.png" style="position: absolute; width: 25%; top: 33%" />
+                      <p style="position: absolute; color: #fff; font-weight: 1000; font-size: 24px; width: 100%; text-align: center; top: 82%">
+                        爾休披斯槍
+                      </p>
+                      <p
+                        style="
+                          color: #f4d631;
+                          font-size: 1.5em;
+                          font-weight: 700;
+                          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                          position: absolute;
+                          width: 30%;
+                          top: 29%;
+                          right: 16%;
+                        "
+                      >
+                        +7
+                      </p>
                     </div>
 
                     <div class="card" style="margin-top: 10px; border: 2px solid rgba(0, 0, 0, 0.125)">
@@ -104,15 +123,15 @@
                             <div class="row g-0">
                               <div class="col-6" style="color: #fff">精煉等級</div>
                               <div class="col-1"></div>
-                              <div class="col-3" style="color: #6f9f66; font-weight: 1000">+4</div>
+                              <div class="col-3" style="color: #9ad8a5; font-weight: 700">+4</div>
                             </div>
                           </div>
-                          <div class="col-2" style="display: flex; justify-content: center"><img src="static/image/arrow.png" /></div>
+                          <div class="col-2" style="display: flex; justify-content: center"><img src="static/image/Img_Refine_Arrow.png" /></div>
                           <div class="col-5">
                             <div class="row g-0">
                               <div class="col-6" style="color: #fff">精煉等級</div>
                               <div class="col-1"></div>
-                              <div class="col-3" style="color: #6f9f66; font-weight: 1000">+5</div>
+                              <div class="col-3" style="color: #9ad8a5; font-weight: 700">+5</div>
                             </div>
                           </div>
                         </div>
@@ -124,10 +143,15 @@
                         <div class="row g-4 justify-content-md-center">
                           <div class="col col-3" style="position: relative">
                             <img src="static/image/protect_weapon_tier_2.png" style="border-radius: 10px; width: 60px" />
-                            <div class="stone-word">8/8</div>
+                            <div class="stone-word"><span style="color: #e67f88">24</span>/48</div>
+                            <input type="checkbox" id="cb1" />
+                            <label for="cb1"><div class="tick"></div></label>
                           </div>
-                          <div class="col col-3">
+                          <div class="col col-3" style="position: relative">
                             <img src="static/image/refine_weapon_tier_2.png" style="border-radius: 10px; width: 60px" />
+                            <div class="stone-word"><span style="color: #e67f88">24</span>/48</div>
+                            <input type="checkbox" id="cb2" />
+                            <label for="cb2"><div class="tick"></div></label>
                           </div>
                         </div>
                       </div>
@@ -140,6 +164,50 @@
                     </div>
 
                     <hr style="color: #fff" />
+
+                    <div class="row g-2" style="margin: 10px 10px 10px 10px; color: #fff; font-size: 15px">
+                      <div class="col">成功率: 50%</div>
+                      <div class="col">失敗率: 50%</div>
+                      <div class="col">損壞率: 50%</div>
+                    </div>
+
+                    <hr style="color: #fff" />
+
+                    <div class="row g-2">
+                      <div class="col-2"></div>
+                      <div class="col-8" style="display: flex; justify-content: center; position: relative">
+                        <img src="static/image/Btn_LanLoad_Up.png" style="width: 100%; height: 85%" />
+                        <p
+                          style="
+                            font-size: 1.5em;
+                            color: #fff;
+                            font-weight: 1000;
+                            text-shadow: 1px 0px 3px rgb(89, 77, 255);
+                            position: absolute;
+                            top: 20%;
+                            left: 13%;
+                          "
+                        >
+                          精煉
+                        </p>
+                        <img src="static/image/Img_Zeny_B.png" style="position: absolute; width: 15%; top: 20%; right: 46%; z-index: 100" />
+                        <img
+                          src="static/image/svg.svg"
+                          style="
+                            border: 2px solid rgba(0, 0, 0, 0.2);
+                            border-radius: 30em;
+                            position: absolute;
+                            width: 50%;
+                            height: 34%;
+                            top: 28%;
+                            right: 10%;
+                          "
+                        />
+
+                        <p style="color: #9ad8a5; font-size: 1em; font-weight: 700; position: absolute; width: 30%; top: 30%; right: 13%">150000</p>
+                      </div>
+                      <div class="col-2"></div>
+                    </div>
                   </div>
                 </div>
               </div>

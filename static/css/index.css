@@ -1,5 +1,5 @@
 :root {
-  --checkbox-size: 1.3em;
+  --checkbox-size: 1.1em;
   --bg-color: #ffa69e;
   --checkbox-color: #000000;
   --hover-color: #ff686b;
@@ -8,14 +8,15 @@
 
 body {
   font-family: "Arial";
+  font-size: 1px;
 }
 
 .stone-word {
   position: absolute;
-  bottom: 0;
-  right: 23%;
+  bottom: -3%;
+  right: 30%;
   color: #fff;
-  font-size: 12px;
+  font-size: 0.5em;
   font-weight: 700;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -26,8 +27,8 @@ label {
   margin: 0 calc(var(--checkbox-size) * 0.25);
   width: var(--checkbox-size);
   height: var(--checkbox-size);
-  right: 8%;
-  top: -10%;
+  right: 23%;
+  top: -7%;
   border-radius: 100%;
   -webkit-transition: 400ms 100ms ease-out;
   -o-transition: 400ms 100ms ease-out;
@@ -83,4 +84,34 @@ input[type="checkbox"]:checked + label .tick {
   -webkit-transform: rotate(45deg) scale(1);
   -ms-transform: rotate(45deg) scale(1);
   transform: rotate(45deg) scale(1);
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    font-size: 3px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 16px;
+  }
 }
